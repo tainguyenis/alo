@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.alovi" android:versionCode="1" android:versionName="1.0.0">
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/><application android:icon="@drawable/ic_launch" android:label="@string/apps_name">
+		<activity android:name=".activity.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity><activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".activity.UserLoginActivity" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="com.alovi.activity.UserLoginActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.UserRegisterActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait">
+		</activity>
+		<activity android:name=".activity.MainActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="com.alovi.activity.UserRegisterActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:screenOrientation="portrait" android:name=".activity.MyTopupActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity><activity android:name="com.alovi.activity.MyCardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" /><activity android:screenOrientation="portrait" android:name=".activity.ContactActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+		
+		<activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" android:name=".activity.MyWalletActivity"></activity><activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" android:name=".activity.TransferActivity"></activity><activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" android:name=".activity.MoneyTransferActivity"></activity><activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" android:name=".activity.OtherTransferActivity"></activity><activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" android:name=".activity.ThongKeDoanhThuActivity"></activity><activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" android:name=".activity.TransactionHistoryActivity"></activity>
+		<activity android:screenOrientation="portrait" android:name=".activity.EventMenuActivity" android:theme="@android:style/Theme.NoTitleBar"></activity><activity android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait" android:name=".activity.MyInfoActivity"></activity>
+		
+		<activity android:name=".activity.ChangePasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+		
+		
+		
+		<activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" android:name=".activity.ConfigActivity"></activity><activity android:name=".activity.AboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity><activity android:name=".activity.DiscountsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" android:name=".activity.VideoHelpActivity"></activity><activity android:name=".activity.MessageBoxActivity" android:theme="@android:style/Theme.Dialog" android:screenOrientation="portrait" />
+		<activity android:name=".activity.MyVcoinTopupActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activity.MyAsiaTopupActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activity.MyVcoinCardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activity.MyGateFPTCardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activity.MyZingXuCardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activity.MySoftnyxCardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		
+		
+		
+		
+		
+		
+		
+	</application>
+	<uses-sdk android:minSdkVersion="9"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+</manifest>
